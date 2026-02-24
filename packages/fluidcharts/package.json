@@ -1,0 +1,26 @@
+{
+  "name": "@fluidcharts/core",
+  "version": "1.0.0",
+  "description": "React Native chart library using Skia and D3.js",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "start": "echo 'Use npm run start from apps/showcase'",
+    "build": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@shopify/react-native-skia": "*",
+    "d3": "*"
+  },
+  "devDependencies": {
+    "@shopify/react-native-skia": "^1.0.0",
+    "@types/d3": "^7.4.0",
+    "d3": "^7.8.0",
+    "react": "^18.2.0",
+    "react-native": "^0.74.0",
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "react-native-fluidcharts",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run start --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "doctor": "npx @react-native-community/cli doctor"
+  },
+  "devDependencies": {
+    "@react-native-community/cli": "^18.0.0",
+    "@react-native-community/cli-platform-android": "^18.0.0",
+    "@react-native-community/cli-platform-ios": "^18.0.0",
+    "typescript": "^5.0.0"
+  }
+}
