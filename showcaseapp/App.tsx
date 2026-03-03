@@ -11,9 +11,11 @@ import {
   SafeAreaProvider,
   useSafeAreaInsets,
 } from 'react-native-safe-area-context';
+import { multiply } from 'react-native-fluidcharts';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
+  const tt = multiply(2, 4);
 
   return (
     <SafeAreaProvider>
