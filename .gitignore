@@ -1,42 +1,45 @@
 # Dependencies
 node_modules/
-packages/*/node_modules/
-apps/*/node_modules/
-modules/*/node_modules/
+.pnpm-store/
 
 # Build outputs
-dist/
-build/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+packages/*/lib/
+app/lib/
+android/build/
+android/.gradle/
+ios/build/
 
 # IDE
 .idea/
 .vscode/
-*.swp
-*.swo
+*.xcuserstate
+xcuserdata/
 
-# Metro
+# OS
+.DS_Store
+Thumbs.db
+
+# Build tools
+vendor/bundle/
+Pods/
+.expo/
+.expo-shared/
+
+# Logs & Cache
+npm-debug.log*
+yarn-error.log*
+yarn-debug.log*
 .metro-health-check*
 
-# Testing
+# Coverage
 coverage/
 
-# Temporary files
-*.tmp
-*.temp
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Lock files (optional - uncomment if you don't want to commit lock files)
+# pnpm-lock.yaml
+# package-lock.json
+# yarn.lock
